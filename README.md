@@ -28,3 +28,18 @@
 
 1. [Agile - Intro](https://www.atlassian.com/agile/manifesto)
 2. [Agile Epics](https://www.atlassian.com/agile/project-management/epics-stories-themes)
+
+**Sprint 1**
+
+***Deadline: July 20th***
+
+[Styles and Page Layouts](https://docs.google.com/presentation/d/1kot5xOeYVSjs1yHk9h_jGxeQww6u1mEL7SP4kJKXxps/edit?usp=sharing)
+>Ensure TDD (Test Driven Development) is used throughout the project lifetime.
+
+1. Achieve front end using HTML and JavaScript\
+    I. Refer to slides for design guidelines.
+2. Design the User Object in complience with google sign-in utilities.
+3. Using JavaScript and potentially utilizing Node.js establish connection with MongoDB.
+4. Use Postman to test CRUD operations.
+5. Use unit-testing to ensure correct user creation and saving.\
+    I. Establish unit testing with server if possible
