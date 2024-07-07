@@ -1,0 +1,24 @@
+{
+  "name": "browser_version",
+  "version": "1.0.0",
+  "description": "browser version for the cross-platform google sign in application",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha src/testing"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SirojiddinAripov/crossplaform-account-registration.git"
+  },
+  "author": "Sirojiddin Aripov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SirojiddinAripov/crossplaform-account-registration/issues"
+  },
+  "homepage": "https://github.com/SirojiddinAripov/crossplaform-account-registration#readme",
+  "dependencies": {
+    "chai": "^5.1.1",
+    "mocha": "^10.6.0"
+  }
+}
