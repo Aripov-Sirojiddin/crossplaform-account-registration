@@ -3,7 +3,7 @@
 */
 
 import { expect } from 'chai';
-import { hasTwoDigits } from '../index.js';
+import {atLeast8Chars, hasTwoDigits} from '../index.js';
 
 describe('Password Validation Functions', () => {
     it('Checks whether the string has two digits in the middle', () => {
@@ -14,5 +14,12 @@ describe('Password Validation Functions', () => {
     });
     it('Checks whether the string has two digits with no digits', () => {
         expect(hasTwoDigits("password")).to.be.false;
+    });
+
+    it('verifies that string contains over 8 chars: Passes', () => {
+       expect(atLeast8Chars("12345678")).to.be.true;
+    });
+    it('verifies that string contains over 8 chars: Fails', () => {
+        expect(atLeast8Chars("1234567")).to.be.false;
     });
 });
