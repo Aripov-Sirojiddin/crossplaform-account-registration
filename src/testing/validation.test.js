@@ -3,7 +3,7 @@
 */
 
 import {expect} from 'chai';
-import {hasAtLeast8Chars, hasTwoDigits, hasSpecialChar, hasUpperChar, validatePassword} from '../index.js';
+import {hasAtLeast8Chars, hasTwoDigits, hasSpecialChar, hasUpperChar, validatePassword} from '../passwordValidation.js';
 
 describe('verifies that string', () => {
     it('has two digits in the middle: Passes', () => {

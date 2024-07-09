@@ -4,8 +4,7 @@
     @updates N/A
     @returns [Boolean]
 */
-const hasTwoDigits = (elem) => (elem.match(/\d/g) || []).length >= 2;
-export {hasTwoDigits}
+export const hasTwoDigits = (elem) => (elem.match(/\d/g) || []).length >= 2;
 
 /*Created on 07/08/2024 By Sirojiddin Aripov
     @description Check whether the string contains at least 8 chars
@@ -13,8 +12,7 @@ export {hasTwoDigits}
     @updates N/A
     @returns [Boolean]
 */
-const hasAtLeast8Chars = (elem) => elem.length >= 8;
-export {hasAtLeast8Chars}
+export const hasAtLeast8Chars = (elem) => elem.length >= 8;
 
 /*Created on 07/08/2024 By Sirojiddin Aripov
     @description Contains 1 upper character
@@ -22,8 +20,7 @@ export {hasAtLeast8Chars}
     @updates N/A
     @returns [Boolean]
 */
-const hasUpperChar = (elem) => (elem.match(/[A-Z]/) || []).length >= 1;
-export {hasUpperChar}
+export const hasUpperChar = (elem) => (elem.match(/[A-Z]/) || []).length >= 1;
 
 /*Created on 07/08/2024 By Sirojiddin Aripov
     @description Contains 1 speical character
@@ -31,8 +28,7 @@ export {hasUpperChar}
     @updates N/A
     @returns [Boolean]
 */
-const hasSpecialChar = (elem) => (elem.match(/[!@#\$%\^&\*\(\)_\-=+\[\]\\\{}\.,\?`~]/) || []).length >= 1;
-export {hasSpecialChar}
+export const hasSpecialChar = (elem) => (elem.match(/[!@#\$%\^&\*\(\)_\-=+\[\]\\\{}\.,\?`~]/) || []).length >= 1;
 
 /*Created on 07/08/2024 By Sirojiddin Aripov
     @description runs the string through series of tests to verify it's a valid password
@@ -40,5 +36,5 @@ export {hasSpecialChar}
     @updates N/A
     @returns [Boolean]
 */
-const validatePassword = (password) => hasTwoDigits(password) && hasSpecialChar(password) && hasAtLeast8Chars(password) && hasUpperChar(password);
-export {validatePassword}
+export const validatePassword = (password) => hasTwoDigits(password) && hasSpecialChar(password) && hasAtLeast8Chars(password) && hasUpperChar(password);
+
