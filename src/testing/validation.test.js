@@ -2,24 +2,29 @@
     @description Testing the password utilities
 */
 
-import { expect } from 'chai';
-import {atLeast8Chars, hasTwoDigits} from '../index.js';
+import {expect} from 'chai';
+import {hasAtLeast8Chars, hasTwoDigits, hasUpperChar} from '../index.js';
 
-describe('Password Validation Functions', () => {
-    it('Checks whether the string has two digits in the middle', () => {
+describe('verifies that string has', () => {
+    it('two digits in the middle: Passes', () => {
         expect(hasTwoDigits("pa55word")).to.be.true;
     });
-    it('Checks whether the string has two digits begining and end', () => {
+    it('two digits at beginning and end: Passes', () => {
         expect(hasTwoDigits("5paword5")).to.be.true;
     });
-    it('Checks whether the string has two digits with no digits', () => {
+    it('two digits with no digits: Fails', () => {
         expect(hasTwoDigits("password")).to.be.false;
     });
-
-    it('verifies that string contains over 8 chars: Passes', () => {
-       expect(atLeast8Chars("12345678")).to.be.true;
+    it('over 8 chars: Passes', () => {
+        expect(hasAtLeast8Chars("12345678")).to.be.true;
     });
-    it('verifies that string contains over 8 chars: Fails', () => {
-        expect(atLeast8Chars("1234567")).to.be.false;
+    it('over 8 chars: Fails', () => {
+        expect(hasAtLeast8Chars("1234567")).to.be.false;
+    });
+    it('at least 1 special char: Passes', () => {
+        expect(hasUpperChar("This should pass"))
+    });
+    it('at least 1 special char: Fail', () => {
+        expect(hasUpperChar("this should fail"))
     });
 });
