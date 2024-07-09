@@ -35,9 +35,10 @@ const hasSpecialChar = (elem) => (elem.match(/[!@#\$%\^&\*\(\)_\-=+\[\]\\\{}\.,\
 export {hasSpecialChar}
 
 /*Created on 07/08/2024 By Sirojiddin Aripov
-    @description runs the string through test series to verify if it's valid
+    @description runs the string through series of tests to verify it's a valid password
     @param elem [String]
     @updates N/A
     @returns [Boolean]
 */
-// const verifyPassword = (psswrd) =>
+const validatePassword = (password) => hasTwoDigits(password) && hasSpecialChar(password) && hasAtLeast8Chars(password) && hasUpperChar(password);
+export {validatePassword}
