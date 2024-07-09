@@ -24,3 +24,12 @@ export {hasAtLeast8Chars}
 */
 const hasUpperChar = (elem) => (elem.match(/[A-Z]/) || []).length >= 1;
 export {hasUpperChar}
+
+/*Created on 07/08/2024 By Sirojiddin Aripov
+    @description Contains 1 speical character
+    @param elem [String]
+    @updates N/A
+    @returns [Boolean]
+*/
+const hasTwoSpecialChars = (elem) => (elem.match(/!@#\$%\^&\*\(\)_-=+\[]\\\{}\.,\?`~/) || []).length >= 1;
+export {hasTwoSpecialChars}

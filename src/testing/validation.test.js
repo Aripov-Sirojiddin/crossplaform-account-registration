@@ -3,7 +3,7 @@
 */
 
 import {expect} from 'chai';
-import {hasAtLeast8Chars, hasTwoDigits, hasUpperChar} from '../index.js';
+import {hasAtLeast8Chars, hasTwoDigits, hasTwoSpecialChars, hasUpperChar} from '../index.js';
 
 describe('verifies that string has', () => {
     it('two digits in the middle: Passes', () => {
@@ -21,10 +21,16 @@ describe('verifies that string has', () => {
     it('over 8 chars: Fails', () => {
         expect(hasAtLeast8Chars("1234567")).to.be.false;
     });
-    it('at least 1 special char: Passes', () => {
+    it('at least 1 UpperCase char: Passes', () => {
         expect(hasUpperChar("This should pass"))
     });
-    it('at least 1 special char: Fail', () => {
+    it('at least 1 UpperCase char: Fail', () => {
         expect(hasUpperChar("this should fail"))
+    });
+    it('at least 1 special char: Passes', () => {
+        expect(hasTwoSpecialChars("thi$$should pass"))
+    });
+    it('at least 1 special char: Fail', () => {
+        expect(hasTwoSpecialChars("thi$$should pass"))
     });
 });
