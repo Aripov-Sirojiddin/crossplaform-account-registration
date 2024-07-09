@@ -3,7 +3,7 @@
 */
 
 import {expect} from 'chai';
-import {hasAtLeast8Chars, hasTwoDigits, hasTwoSpecialChars, hasUpperChar} from '../index.js';
+import {hasAtLeast8Chars, hasTwoDigits, hasSpecialChar, hasUpperChar} from '../index.js';
 
 describe('verifies that string has', () => {
     it('two digits in the middle: Passes', () => {
@@ -22,15 +22,21 @@ describe('verifies that string has', () => {
         expect(hasAtLeast8Chars("1234567")).to.be.false;
     });
     it('at least 1 UpperCase char: Passes', () => {
-        expect(hasUpperChar("This should pass"))
+        expect(hasUpperChar("This should pass")).to.be.true;
     });
     it('at least 1 UpperCase char: Fail', () => {
-        expect(hasUpperChar("this should fail"))
+        expect(hasUpperChar("this should fail")).to.be.false;
     });
-    it('at least 1 special char: Passes', () => {
-        expect(hasTwoSpecialChars("thi$$should pass"))
+    it('at least 1 special char with 2 $: Passes', () => {
+        expect(hasSpecialChar("thi$$should pass")).to.be.true;
+    });
+    it('at least 1 special char with 1 $: Passes', () => {
+        expect(hasSpecialChar("thi$should pass")).to.be.true;
+    });
+    it('at least 1 special char with #: Passes', () => {
+        expect(hasSpecialChar("thi#should pass")).to.be.true;
     });
     it('at least 1 special char: Fail', () => {
-        expect(hasTwoSpecialChars("thi$$should pass"))
+        expect(hasSpecialChar("this should fail")).to.be.false;
     });
 });

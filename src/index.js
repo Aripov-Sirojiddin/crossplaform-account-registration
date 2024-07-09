@@ -31,5 +31,13 @@ export {hasUpperChar}
     @updates N/A
     @returns [Boolean]
 */
-const hasTwoSpecialChars = (elem) => (elem.match(/!@#\$%\^&\*\(\)_-=+\[]\\\{}\.,\?`~/) || []).length >= 1;
-export {hasTwoSpecialChars}
+const hasSpecialChar = (elem) => (elem.match(/[!@#\$%\^&\*\(\)_\-=+\[\]\\\{}\.,\?`~]/) || []).length >= 1;
+export {hasSpecialChar}
+
+/*Created on 07/08/2024 By Sirojiddin Aripov
+    @description runs the string through test series to verify if it's valid
+    @param elem [String]
+    @updates N/A
+    @returns [Boolean]
+*/
+// const verifyPassword = (psswrd) =>
