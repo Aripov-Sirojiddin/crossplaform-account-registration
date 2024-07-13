@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, Helvetica, sans-serif, serif;
+    font-size: 3vh;
+}
+h1 {
+    font-family: "Playwrite PE", cursive, Ariel, Helvetica, sans-serif, serif;
+    color: #4285f4;
+    margin: 0;
+}
+a {
+    font-size: 1.5ex;
+    color: #4285f4;
+    text-decoration: none;
+    margin-bottom: 0.6vh;
+}
+a:hover{
+    color: #1d64d7;
+}
+p {
+    margin: 0 0 0.6vh;
+    padding: 0;
+    color: #969696;
+    font-size: 1.5ex;
+}
+.main-container {
+    width: 35vh
+}
+.input-text {
+    height: 6vh;
+    width: 100%;
+    font-size: 2.5vh;
+    border: #8d8d8d solid 2px;
+    border-radius: 0.6vh;
+    padding: 1vw;
+    box-sizing: border-box;
+    margin-bottom: 0.6vh;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    outline: none;
+}
+.input-text:focus{
+    border: #2176ff solid 2px;
+}
+
+.main-container {
+    padding-top: 23vh;
+    margin: auto;
+    text-align: center;
+}
+
+.blue-button {
+    height: 6vh;
+    color: white;
+    background: #2176ff;
+    border: none;
+    border-radius: 0.6vh;
+    font-size: inherit;
+    width: 100%;
+    padding: 0.5ex;
+    margin-bottom: 0.6vh;
+}
+.blue-button:hover{
+    background: #1968e7;
+}
+
+.white-button {
+    height: 6vh;
+    width: 100%;
+    background: white;
+    color: #545454;
+    border: #2176ff solid 0.3vh;
+    border-radius:  0.6vh;
+    font-size: 2.5vh;
+    text-align: center;
+    padding: 0 3vh 0 0;
+    display: flex;
+    align-items: center;
+}
+.white-button:hover {
+    background: #ececec;
+}
+.white-button > img {
+    height: 4vh;
+    width: 4vh;
+    margin: 0 1vh 0 2vh;
+}
+.white-button > span {
+    flex: 3;
+    margin: 0;
+}

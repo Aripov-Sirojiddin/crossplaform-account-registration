@@ -3,20 +3,28 @@
 <head>
     <title>Denoter</title>
     <link rel="stylesheet" href="./styles/login-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="main-container">
     <h1>Dénoter</h1>
     <form action="POST">
-        <input type="text" name="username" placeholder="Username">
+        <input class="input-text" type="text" name="username" placeholder="Username">
         <br>
-        <input type="text" name="password" placeholder="Password">
+        <input class="input-text" type="password" name="password" placeholder="Password">
         <br>
-        <input type="submit" name="submit" value="Log In" id="log_in_btn">
+        <input class="blue-button" type="submit" name="submit" value="Log In" id="log_in_btn">
     </form>
-    <a href="">Create and account</a>
+    <div id="account_issues">
+        <a href="">Create an account</a>
+    </div>
     <p>or</p>
-    <button>Continue with Google</button>
+    <button class="white-button">
+        <img src="./resources/Google__G__logo.svg.png" alt="Google Logo" width="38vh">
+        <span>Continue with Google</span>
+    </button>
 </div>
 </body>
 </html>
