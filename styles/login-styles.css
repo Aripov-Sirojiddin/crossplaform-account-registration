@@ -12,6 +12,8 @@ a {
     color: #4285f4;
     text-decoration: none;
     margin-bottom: 0.6vh;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
 }
 a:hover{
     color: #1d64d7;
@@ -58,6 +60,8 @@ p {
     width: 100%;
     padding: 0.5ex;
     margin-bottom: 0.6vh;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
 }
 .blue-button:hover{
     background: #1968e7;
@@ -75,6 +79,8 @@ p {
     padding: 0 3vh 0 0;
     display: flex;
     align-items: center;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
 }
 .white-button:hover {
     background: #ececec;
